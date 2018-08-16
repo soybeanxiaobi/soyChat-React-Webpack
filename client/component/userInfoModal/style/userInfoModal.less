@@ -1,0 +1,97 @@
+
+
+.modal{
+    font-size:16px;
+    color:#888;
+    width:80%;
+    height:300px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-60%);    
+}
+.modalName{
+    padding:5px 10px;
+}
+
+.modalCont{
+    // text-align: center;
+
+    .list{
+        margin-top:20px;
+        float:left;
+        margin-left:100px;
+
+        input{
+            padding:4px 6px;
+            border:1px solid #ccc;
+            margin-left:10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .showImg{
+            margin-top:15px;
+
+            .imgDiv{
+                display: inline-block;
+                text-align: center;
+                margin-right:15px;   
+                padding:5px 8px;   
+                cursor:pointer;
+                border: 1px solid #FFF;//防止新增boder导致抖动          
+            }
+
+            .imgDiv:hover{
+                border:1px solid #8c628d;
+            }
+            
+            img{
+                width:35px;
+            }
+        }
+
+    }
+}
+
+.modalFoot{
+    position: absolute;
+    bottom:15px;
+    right:10px;
+
+    button{
+        width:40px;
+        height:30px;
+        text-align: center;
+        line-height: 30px;
+        margin-right:10px;
+        cursor: pointer;
+    }
+    
+    .resetBtn{
+        color:#8c628d;
+        border:1px solid #8c628d;
+        background: transparent;
+    
+        
+    }
+    .submitBtn{
+        color:#FFF;
+        background-color: #8c628d;
+        border:1px solid #8c628d;
+    }
+
+    .resetBtn:hover{
+        color:#FFF;
+        background-color: #8c628d;
+        border:1px solid #8c628d;
+    }
+
+    .submitBtn:hover{
+        color:#8c628d;
+        border:1px solid #8c628d;
+        background: transparent;
+    }
+}

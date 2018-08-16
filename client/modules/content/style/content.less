@@ -1,0 +1,132 @@
+
+.content{
+    width:100%;
+    height:84%;
+    background-color: #ECECEC;
+    border-bottom: 3px solid #EEE;
+}
+
+
+.contUl{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    list-style: none;
+    overflow-x: hidden;
+
+    .contTop{
+        font-size:14px;
+        color:#888;
+        text-align: center;
+        padding:8px;
+    }
+
+    .contLi{
+        width:100%;
+        padding:15px 15px 0;
+        position: relative;
+        overflow-x: hidden;
+
+        .headImg{
+            width:45px;
+            height:45px;
+            border:1px solid #888;
+            border-radius:25px;
+            text-align: center;
+
+            img{
+                width:35px;
+                margin-top:5px;
+            }
+        }
+        .headImg:before{
+            clear:both;
+        }
+
+        .chatContent{
+            display: inline-block;
+
+            .chatName{
+                font-size:14px;
+                color:#888;
+            }
+
+            .chatBg{
+                font-size:15px;
+                padding:3px 10px;
+                border-radius: 3px;
+                position: relative;
+            }
+        }
+        .chatBg:before{
+            content: "";
+            position:absolute;
+            top:4px;
+            width:0;
+            height:0;
+            font-size:0;
+            border:solid 6px;
+        }
+    }
+
+    .contLi:last-child{
+        margin-bottom: 10px;
+    }
+    //我方聊天框
+    .contLiMy{
+        float:right;
+
+        .headImg{
+            float:right;
+        }
+
+        .chatContent{
+            margin-right: 5px;
+
+            .chatName{
+                text-align: right;                
+                margin-right:8px;
+            }
+        }
+
+        .chatBg{
+            color: #EFEFEF;            
+            background-color: #8c628d;            
+            margin-right:8px;
+        }
+
+        .chatBg:before{
+            right:-12px; 
+            border-color:transparent transparent transparent #8c628d;  //我方边框       
+        }
+    }
+
+    //对方聊天框
+    .contLiOther{
+        float:left;
+
+        .headImg{
+            float:left;
+        }
+
+        .chatContent{
+            margin-left: 5px;
+
+            .chatName{
+                text-align: left;                
+                margin-left:8px;
+            }
+        }
+
+        .chatBg{
+            color:#333;
+            background-color: #FFF;                        
+            margin-left:8px;
+        }
+
+        .chatBg:before{
+            left:-12px;
+            border-color:transparent #FFF transparent transparent;     //他方边框         
+        }
+    }
+}
